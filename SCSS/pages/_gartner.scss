@@ -1,0 +1,34 @@
+    .gartner-wrapper{
+        
+        color: $primary-color;
+        background: linear-gradient(98deg, #1172d0 1%, #1d98d6 89%);
+    }
+
+    .gartner{
+       padding: 0;
+        &__left{
+            max-width: 687px;
+            float: left;
+            a{
+                color: $primary-color;
+                text-decoration: underline;
+            }
+        }
+        &__left p:first-child{
+            margin-bottom: 21px;
+        }
+        &__right{
+            line-height: 100px;
+            float: right;
+            img{
+                display: inline-block;
+                vertical-align: middle;
+                line-height: 0;
+            }
+        }
+    }
+    .gartner::after{
+        content: "";
+        display: block;
+        clear: both;
+    }

@@ -1,0 +1,68 @@
+@mixin footer-data {
+  font-size: 12px;
+  color: $primary-color;
+  opacity: 0.6;
+  font-weight: 100;
+}
+
+.footer {
+  background-color: $dark-black;
+  &__creater-info {
+    margin-right: 108px;
+    float: left;
+  }
+  &__main-logo {
+    margin-bottom: 23px;
+  }
+  &__content {
+    max-width: 196px;
+    @include footer-data;
+    line-height: 19px;
+    a {
+      @include footer-data;
+      text-decoration: underline;
+    }
+  }
+  &__social-logo li{
+    float: right;
+    margin-right: 12px;
+    a{
+        img{
+           fill: red;
+        }
+    }
+  }
+  .container::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+table {
+    border-collapse: collapse;
+    text-align: left;
+    float: left;
+  thead {
+    th {
+      font-size: 13px;
+      color: $primary-color;
+      font-weight: normal;
+      font-weight: 100;
+      padding-bottom: 17px;
+    }
+  }
+  tbody,
+  tfoot {
+    td {
+      @include footer-data;
+      line-height: 28px;
+    }
+  }
+}
+
+.col-1 {
+  padding-right: 99px;
+}
+.col-2 {
+  padding-right: 75px;
+}

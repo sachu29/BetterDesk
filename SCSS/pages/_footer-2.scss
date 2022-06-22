@@ -1,0 +1,19 @@
+
+.footer-2{
+    color: $primary-color;
+    background-color: $bg-dark;
+    text-align: center;
+    font-weight: 100;
+    &__content{
+    opacity: 0.6;
+        span{
+            color: $primary-color; 
+            font-weight: bold;
+        }
+        a{
+            color: $primary-color;
+            opacity: .6;
+            text-decoration: underline;
+        }
+    }
+}

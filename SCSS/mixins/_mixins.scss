@@ -1,0 +1,32 @@
+@mixin input {
+  padding: 16px 20px;
+  border-radius: 3px 0 0 3px;
+  color: $primary-color;
+  border: none;
+  outline: none;
+  &::placeholder {
+    color: $primary-color;
+  }
+}
+
+@mixin input-button {
+  position: absolute;   
+  text-align: center;
+  color: $primary-color;
+  top: 0;
+  padding: 16px 20px 17px;
+  border-radius: 0 3px 3px 0;
+}
+
+// white play button
+
+@mixin play-btn{
+    content:"";
+    background-color: $primary-color;
+    display: inline-block;
+    border-left: 20px solid ;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    margin-top: 23px;
+    margin-left: 10px;
+}

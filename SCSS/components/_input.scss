@@ -1,0 +1,22 @@
+.input-wrapper{
+    width: 302px;
+    height: 52px;
+    padding: 16px 20px;
+    border-radius: 3px 0 0 3px;
+    color: $primary-color;
+    background-color: rgba(177, 177, 177, 0.5);
+    border: none;
+    outline: none;
+    &::placeholder{
+        color: $primary-color;
+    }
+}
+.input-button{
+    position: relative;
+    top: 1px;
+    left: -4px;
+    width: 120px;
+    height: 52px;
+    padding: 16px 20px 17px;
+    border-radius: 0 3px 3px 0;
+}

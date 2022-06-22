@@ -1,0 +1,15 @@
+.company{
+    background-color: #f9fafa;
+    border: 1px solid #eeeeee;
+}
+.company-list{
+    text-align: center;
+}
+.company-list li{
+    display: inline-block;
+    margin-right: 46px;
+    vertical-align: middle;
+}
+.company-list li:nth-child(5n + 5){
+    margin-right: 0;
+}

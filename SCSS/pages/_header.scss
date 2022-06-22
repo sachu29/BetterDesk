@@ -1,0 +1,80 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 40px 0 0 0;
+  background: $bg-dark;
+  z-index: 5;
+  &__right {
+    float: right;
+    li {
+      display: inline-block;
+      padding: 0 19px 22px;
+      cursor: pointer;
+      a {
+        color: $primary-color;
+        opacity: 0.5;
+      }
+    }
+    li:hover {
+      border-bottom: 4px solid #3dbdb6;
+      transition: all 0.3s ease-in;
+    }
+    span {
+      border: 1px solid #979797;
+      border-radius: 4px;
+      padding: 15px 20px;
+      margin-left: 36px;
+      cursor: pointer;
+      a {
+        color: $primary-color;
+        opacity: 0.5;
+      }
+    }
+  }
+  &__menu {
+    // display: none;
+    visibility: hidden;
+  }
+}
+
+.hero {
+  position: relative;
+  background-color: $bg-dark;
+  height: 100vh;
+  overflow: hidden;
+  &__content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  &__heading {
+    width: 343px;
+    margin-bottom: 47px;
+    color: $primary-color;
+    padding-right: 30px;
+  }
+  &__image {
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+  }
+  &__form {
+    position: relative;
+    width: 422px;
+  }
+  &__input {
+    width: 302px;
+    height: 52px;
+    @include input;
+    background-color: rgba(177, 177, 177, 0.5);
+  }
+  &__input-button {
+    width: 120px;
+    height: 52px;
+    @include input-button;
+    background-color: $bright-green;
+  }
+}

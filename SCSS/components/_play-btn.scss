@@ -1,0 +1,19 @@
+
+.play-btn{
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    color: #3d3f6d;
+    background: $bg-linear-green;
+    cursor: pointer;
+}
+.play-btn::before{
+    content:"";
+    display: inline-block;
+    border-left: 20px solid ;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    margin-top: 23px;
+    margin-left: 10px;
+}

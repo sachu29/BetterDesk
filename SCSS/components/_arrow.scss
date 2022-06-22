@@ -1,0 +1,11 @@
+
+
+.arrow{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    color: $blue-color;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+}

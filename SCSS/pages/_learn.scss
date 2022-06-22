@@ -1,0 +1,44 @@
+.learn {
+  width: 100%;
+  text-align: center;
+  &__list::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  &__list li {
+    float: left;
+    max-width: 350px;
+    margin-right: 25px;
+    text-align: center;
+  }
+  &__list {
+    text-align: center;
+    li:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+  }
+  &__heading {
+    margin-bottom: 73px;
+  }
+  &__picture {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  &__paragraph {
+    margin-bottom: 28px;
+    line-height: normal;
+    padding: 0 20px;
+  }
+  &__list li:nth-child(2) {
+    p {
+      padding: 0 10px;
+    }
+  }
+  &__link {
+    a {
+      color: $blue-color;
+    }
+  }
+}

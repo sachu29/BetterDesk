@@ -1,0 +1,59 @@
+@mixin logo {
+}
+
+.support {
+  text-align: center;
+  &__heading {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    color: #333333;
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+.support-list {
+  text-align: center;
+  li {
+    display: inline-block;
+    max-width: 225px;
+    margin-right: 55px;
+  }
+  li:nth-child(3n + 3) {
+    margin-right: 0;
+  }
+  &__logo {
+    display: inline-block;
+    width: 99px;
+    height: 99px;
+    border-radius: 50%;
+    padding: 30px;
+    margin-bottom: 14px;
+    &--green {
+      background: $bg-linear-green;
+    }
+    &--violet {
+      background: $bg-linear-violet;
+    }
+    &--red {
+      background: $bg-linear-red;
+    }
+  }
+  &__heading {
+    margin-bottom: 12px;
+    color: $dark-gray;
+  }
+  &__paragraph {
+    margin-bottom: 12px;
+    color: $light-gray;
+  }
+  &__link {
+    margin-bottom: 12px;
+    font-weight: 600;
+    a {
+      color: $blue-color;   
+    }
+  }
+}
