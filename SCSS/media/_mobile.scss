@@ -4,45 +4,49 @@
     top: 0;
     right: 0;
     left: 0;
-    padding: 20px 0 20px;
     vertical-align: middle;
+    padding: 0;
+    font-size: 0;
+    &__main-logo {
+      width: 35%;
+      display: inline-block;
+    }
     &__right {
       display: none;
     }
+    &__content{
+      position: static;
+    }
     &__menu {
-        float: right;
-        // display: block;
-        visibility: visible;
-      img{
-        display: block;
-      }
+      display: inline-block;
+      padding: 15px 0;
+      width: 65%;
+      text-align: right;
     }
     &__form {
       width: 100%;
     }
-    &__input {
-      width: 100%;
-    }
-    &__input-button {
-      font-size: 12px;
-    }
   }
 
   .hero {
+    // position: relative;
     width: 100%;
     height: 100vh;
+    &__content {
+      margin: 0;
+      // position: absolute;
+      // top: 50%;
+      // left: 50%;
+      // transform: translate(-50%, -50%);
+    }
     &__heading {
       padding-right: 0;
-      font-size: 30px;
-    }
-    &__content {
-      position: static;
-      margin-right: 0;
+      font-size: 20px;
     }
     &__image {
       display: none;
     }
-    &__input {
+    &__form {
       width: 100%;
     }
   }
@@ -58,9 +62,12 @@
   }
 
   .support {
+    text-align: center;
     .support-list {
       li {
-        margin: 0 0 25px 0;
+        width: 100%;
+        text-align: center;
+        margin: 0 0 25px;
       }
     }
   }
@@ -68,10 +75,11 @@
   .todo-list {
     text-align: center;
     &__left {
-      float: none;
+      width: 100%;
+      margin-bottom: 30px;
     }
     &__right {
-      float: none;
+      width: 100%;
       img {
         width: 100%;
         height: auto;
@@ -85,7 +93,7 @@
     &__list {
       li {
         width: 100%;
-        margin: 0 20px 20px 0;
+        margin: 0 0 20px 0;
       }
     }
     &__heading {
@@ -101,18 +109,137 @@
     .gartner {
       text-align: center;
       &__left {
-        float: none;
+        width: 100%;
+        margin-bottom: 20px;
       }
       &__right {
-        float: none;
+        text-align: center;
+        width: 100%;
       }
     }
   }
 
-  .profile{
-    &__list{
-        width: 100%;
-        // display: block;
+  .business {
+    width: 100%;
+    height: 500px;
+    background: url("https://i.postimg.cc/vHvj73t7/Img-bg-women.png");
+    background-position: center right 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+  }
+
+  .profile {
+    &__list {
+      width: 100%;
+      margin: 0 0 25px 0;
     }
+  }
+
+  .footer {
+    width: 100%;
+    text-align: center;
+    &__creater-info {
+      width: 100%;
+      // margin-bottom: 30px;
+      text-align: center;
+      margin: 0 auto 30px;
+      p {
+        margin: 0 auto;
+      }
+    }
+    &__table {
+      width: 100%;
+      margin-bottom: 30px;
+      &--list{
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+    .list--heading{
+      margin-bottom: 5px;
+    }
+    
+
+    &__social-logo {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  // Media query for text
+
+  // Heading font
+
+  .heading--xxl {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+  }
+  .heading--xl {
+    font-size: 25px;
+    line-height: 23px;
+  }
+  .heading--l {
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 400;
+  }
+  .heading--md {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .heading--s {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .heading--xs {
+    font-size: 14px;
+    letter-spacing: 0.4px;
+  }
+  .heading--xxs {
+    font-size: 12px;
+  }
+
+  // Heading font
+
+  // Text fonts
+  .text--xxxl {
+    font-size: 22px;
+  }
+  .text--xxl {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .text--xl {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .text--l {
+    font-size: 14 px;
+    line-height: 25px;
+  }
+  .text--md {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .text--s {
+    font-size: 10px;
+    line-height: 24px;
+  }
+  .text--xs {
+    font-size: 10px;
+    line-height: 19px;
+  }
+
+  // Text fonts
+
+  //   Section
+
+  .section--md {
+    padding: 35px 0;
+  }
+  .section--lg {
+    padding: 50px 0;
   }
 }

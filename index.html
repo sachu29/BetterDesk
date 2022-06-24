@@ -14,13 +14,14 @@
       <header>
         <nav class="navbar">
           <div class="container">
-            <a href="javascript:void(0);"
-              ><img
+            <a class="navbar__main-logo" href="javascript:void(0);">
+              <img
                 width="124px"
                 height="24px"
                 src="https://i.postimg.cc/0541MtZz/Main-logo.png"
                 alt="Better Desk Logo"
-            /></a>
+              />
+            </a>
 
             <ul class="navbar__right">
               <li><a href="javascript:void(0);">Home</a></li>
@@ -28,7 +29,9 @@
               <li><a href="javascript:void(0);">Demo</a></li>
               <li><a href="javascript:void(0);">Resources</a></li>
               <li><a href="javascript:void(0);">Sign In</a></li>
-              <span><a href="javascript:void(0);">Sign Up</a></span>
+              <span class="navbar__right--button"
+                ><a href="javascript:void(0);">Sign Up</a></span
+              >
             </ul>
 
             <div class="navbar__menu">
@@ -57,10 +60,12 @@
               <input
                 type="email"
                 name="email"
-                class="hero__input"
+                class="hero__input text--l"
                 placeholder="Enter your work email"
               />
-              <a href="javascript:void(0)" class="hero__input-button"
+              <a
+                href="javascript:void(0)"
+                class="hero__input-button heading--xxs"
                 >Sign Up</a
               >
             </form>
@@ -209,38 +214,36 @@
 
         <section class="todo-list section--lg">
           <div class="container">
-            <h2 class="todo-list__heading">Why BetterDesk</h2>
+            <h2 class="todo-list__heading heading--xl">Why BetterDesk</h2>
             <p class="todo-list__paragraph text--xl">
               Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.
               Donec viverra eleifend lacus, vitae ullamcorper metus. Sed
               sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod
               scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.
             </p>
+
             <div class="todo-list__main-content">
               <div class="todo-list__left">
-                <div class="todo-list__main-wrapper">
-                  <div class="todo-list__sub-wrapper">
-                    <div class="todo-list__content-wrapper">
-                      <h4 class="todo-list__small-heading heading--s">
-                        Support for growing business
-                      </h4>
-                      <p class="todo-list__small-paragraph text--md">
-                        Donec facilisis tortor ut augue lacinia, at viverra est
-                        semper. Sed sapien metus, scelerisque nec pharetra id,
-                        tempor a tortor. Pellentesque non dignissim neque. Ut
-                        porta.
-                      </p>
-                    </div>
-                    <ul class="todo-list__list">
-                      <li class="heading--s">
-                        1 billion interactions per year
-                      </li>
-                      <li class="heading--s">Minimal effort</li>
-                      <li class="heading--s">Maximum knowledge</li>
-                    </ul>
+                <div class="todo-list__sub-wrapper">
+                  <div class="todo-list__content-wrapper">
+                    <h4 class="todo-list__small-heading heading--s">
+                      Support for growing business
+                    </h4>
+                    <p class="todo-list__small-paragraph text--md">
+                      Donec facilisis tortor ut augue lacinia, at viverra est
+                      semper. Sed sapien metus, scelerisque nec pharetra id,
+                      tempor a tortor. Pellentesque non dignissim neque. Ut
+                      porta.
+                    </p>
                   </div>
+                  <ul class="todo-list__list">
+                    <li class="heading--s">1 billion interactions per year</li>
+                    <li class="heading--s">Minimal effort</li>
+                    <li class="heading--s">Maximum knowledge</li>
+                  </ul>
                 </div>
               </div>
+
               <div class="todo-list__right">
                 <img
                   width="520px"
@@ -323,7 +326,9 @@
                   <span class="heading--md">BetterDesk</span> is recognized as
                   top Unified Communications provider in 2016 Magic Quandrant
                 </p>
-                <p><a href="javascript:void(0);">Read Report</a></p>
+                <p>
+                  <a class="text--l" href="javascript:void(0);">Read Report</a>
+                </p>
               </div>
               <div class="gartner__right">
                 <img
@@ -342,16 +347,15 @@
         <!-- Background Layout -->
 
         <section class="business">
-          <!-- <div class="business__background"></div> -->
           <div class="container">
             <div class="business__main-wrapper">
               <h2 class="business__heading heading--xl">
                 “When BetterDesk was introduced, our business grows a lot —
                 Strongly recommend.”
               </h2>
-              <span class="business__name-tag text--xl"
-                >Sharon Herrera at Buffer</span
-              >
+              <span class="business__name-tag text--xl">
+                Sharon Herrera at Buffer
+              </span>
               <div class="business__play-button play-btn"></div>
             </div>
           </div>
@@ -359,19 +363,20 @@
 
         <!-- Background Layout -->
 
-        <!-- People playlist -->
+        <!-- People Profile -->
 
         <section class="section--md">
           <div class="container">
             <ul class="profile">
               <li class="profile__list">
-                <img
-                  class="profile__profile-pic"
-                  width="80px"
-                  height="80px"
-                  src="https://i.postimg.cc/BnxrzJ3F/icon-user-buffer.png"
-                  alt="Profile-Picture"
-                />
+                <div class="profile__profile-pic">
+                  <img
+                    width="80px"
+                    height="80px"
+                    src="https://i.postimg.cc/BnxrzJ3F/icon-user-buffer.png"
+                    alt="Profile-Picture"
+                  />
+                </div>
                 <div class="profile__content">
                   <div class="profile__name text--xl">Sharon Herrera</div>
                   <img
@@ -385,19 +390,20 @@
               </li>
 
               <li class="profile__list">
-                <img
-                  class="profile__profile-pic"
-                  width="80px"
-                  height="80px"
-                  src="https://i.postimg.cc/zBf43Wgw/icon-user-angellist.png"
-                  alt="Profile-Picture"
-                />
+                <div class="profile__profile-pic">
+                  <img
+                    width="80px"
+                    height="80px"
+                    src="https://i.postimg.cc/zBf43Wgw/icon-user-angellist.png"
+                    alt="Profile-Picture"
+                  />
+                </div>
                 <div class="profile__content">
                   <div class="profile__name text--xl">Diana Moreno</div>
                   <img
                     class="profile__company-logo"
-                    width="90px"
-                    height="18px"
+                    width="110px"
+                    height="20px"
                     src="https://i.postimg.cc/bJW8hLBS/icon-trello.png"
                     alt="Buffer-Logo"
                   />
@@ -405,19 +411,20 @@
               </li>
 
               <li class="profile__list">
-                <img
-                  class="profile__profile-pic"
-                  width="80px"
-                  height="80px"
-                  src="https://i.postimg.cc/1XnTrQMf/icon-user-basecamp.png"
-                  alt="Profile-Picture"
-                />
+                <div class="profile__profile-pic">
+                  <img
+                    width="80px"
+                    height="80px"
+                    src="https://i.postimg.cc/1XnTrQMf/icon-user-basecamp.png"
+                    alt="Profile-Picture"
+                  />
+                </div>
                 <div class="profile__content">
                   <div class="profile__name text--xl">Diane Tran</div>
                   <img
                     class="profile__company-logo"
-                    width="120px"
-                    height="20px"
+                    width="138px"
+                    height="32px"
                     src="https://i.postimg.cc/65GJdd1Y/icon-basecamp.png"
                     alt="Buffer-Logo"
                   />
@@ -425,20 +432,21 @@
               </li>
 
               <li class="profile__list">
-                <img
-                  class="profile__profile-pic"
-                  width="80px"
-                  height="80px"
-                  src="https://i.postimg.cc/wBgC8nxG/icon-user-treehouse.png"
-                  alt="Profile-Picture"
-                />
+                <div class="profile__profile-pic">
+                  <img
+                    width="80px"
+                    height="80px"
+                    src="https://i.postimg.cc/wBgC8nxG/icon-user-treehouse.png"
+                    alt="Profile-Picture"
+                  />
+                </div>
                 <div class="profile__content">
                   <div class="profile__name text--xl">Julia Wilson</div>
                   <img
                     class="profile__company-logo"
-                    width="90px"
-                    height="18px"
-                    src="https://i.postimg.cc/pTpx43qt/icon-pocket.png"
+                    width="138px"
+                    height="29px"
+                    src="https://i.postimg.cc/TYm2RMGd/icon-grubhub.png"
                     alt="Buffer-Logo"
                   />
                 </div>
@@ -447,7 +455,7 @@
           </div>
         </section>
 
-        <!-- People playlist -->
+        <!-- People Profile -->
 
         <!-- Delivery -->
 
@@ -460,10 +468,12 @@
               <input
                 type="email"
                 name="email"
-                class="delivery__input"
+                class="delivery__input text--l"
                 placeholder="Enter your work email"
               />
-              <a href="javascript:void(0)" class="delivery__input-button"
+              <a
+                href="javascript:void(0)"
+                class="delivery__input-button heading--xxs"
                 >Sign Up</a
               >
             </form>
@@ -494,41 +504,29 @@
               </p>
             </div>
 
-            <table>
-              <thead>
-                <tr>
-                  <th class="col-1">ABOUT</th>
-                  <th class="col-2">SUPPORT</th>
-                  <th>CONTACT</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="col-1">Our Mission</td>
-                  <td class="col-2">FAQ</td>
-                  <td>Email Us</td>
-                </tr>
+            <div class="footer__table">
+              <ul class="footer__table--list list--one">
+                <li class="list--heading">About</li>
+                <li>Our Mission</li>
+                <li>Company</li>
+                <li>Jobs</li>
+                <li>Blog</li>
+              </ul>
 
-                <tr>
-                  <td class="col-1">Company</td>
-                  <td class="col-2">Help Center</td>
-                  <td>Live Chat</td>
-                </tr>
+              <ul class="footer__table--list list--two">
+                <li class="list--heading">Support</li>
+                <li>FAQ</li>
+                <li>Help Center</li>
+                <li>Terms of Service</li>
+                <li>Privacy Policy</li>
+              </ul>
 
-                <tr>
-                  <td class="col-1">Jobs</td>
-                  <td class="col-2">Terms of Services</td>
-                  <td></td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td class="col-1">Blog</td>
-                  <td class="col-2">Privacy Policy</td>
-                  <td></td>
-                </tr>
-              </tfoot>
-            </table>
+              <ul class="footer__table--list list--one">
+                <li class="list--heading">Contact</li>
+                <li>Email Us</li>
+                <li>Live Chat</li>
+              </ul>
+            </div>
 
             <ul class="footer__social-logo">
               <li>
@@ -562,6 +560,8 @@
           </div>
         </section>
 
+        <!-- Footer section 2 -->
+
         <section class="footer-2 section--md">
           <div class="container">
             <p class="footer-2__content text--s">
@@ -575,9 +575,12 @@
             </p>
           </div>
         </section>
+
+        <!-- Footer section 2 -->
       </footer>
 
       <!-- Footer -->
     </div>
   </body>
 </html>
+

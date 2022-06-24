@@ -1,19 +1,37 @@
 .profile {
   width: 100%;
   text-align: center;
+  
   &__list {
-    position: relative;
     display: inline-block;
     min-height: 80px;
     width: calc((100% / 4) - 25px);
     margin-right: 25px;
     vertical-align: middle;
+    :first-child{
+      :first-child::before{
+        background: #000;
+        display: none;
+      }
+    }
   }
-  &__list::before {
+  
+  &__list:nth-child(4n + 4) {
+    margin-right: 0;
+  }
+
+  &__profile-pic {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+  }
+  &__profile-pic::before {
     content: "";
     position: absolute;
     top: 5px;
-    left: 20px;
+    left: 25px;
     color: $primary-color;
     display: inline-block;
     border-left: 18px solid;
@@ -22,23 +40,16 @@
     margin-top: 23px;
     margin-left: 10px;
   }
-  &__list::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-  &__list:nth-child(4n + 4) {
-    margin-right: 0;
-  }
-  &__profile-pic {
-    float: left;
-    margin-right: 5px;
-  }
+
   &__content {
-    display: block;
-    padding: 11px 0 14px 0;
+    width: 60%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0 0 12px;
+    text-align: left;
   }
   &__name {
+    opacity: 0.6;
     margin-bottom: 10px;
   }
 }

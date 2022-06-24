@@ -8,8 +8,9 @@
 .footer {
   background-color: $dark-black;
   &__creater-info {
-    margin-right: 108px;
-    float: left;
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
   }
   &__main-logo {
     margin-bottom: 23px;
@@ -23,46 +24,42 @@
       text-decoration: underline;
     }
   }
-  &__social-logo li{
-    float: right;
-    margin-right: 12px;
-    a{
-        img{
-           fill: red;
-        }
-    }
-  }
-  .container::after{
-    content: "";
-    display: block;
-    clear: both;
-  }
-}
-table {
-    border-collapse: collapse;
+
+  &__table {
     text-align: left;
-    float: left;
-  thead {
-    th {
+    display: inline-block;
+    width: 50%;
+    &--list {
+      display: inline-block;
+      width: 30%;
+      vertical-align: top;
+      li {
+        @include footer-data;
+        line-height: 28px;
+        width: 160px;
+      }
+    }
+    .list--heading {
       font-size: 13px;
+      text-transform: uppercase;
       color: $primary-color;
       font-weight: normal;
-      font-weight: 100;
-      padding-bottom: 17px;
+      margin-bottom: 17px;
     }
   }
-  tbody,
-  tfoot {
-    td {
-      @include footer-data;
-      line-height: 28px;
-    }
-  }
-}
 
-.col-1 {
-  padding-right: 99px;
-}
-.col-2 {
-  padding-right: 75px;
+  &__social-logo {
+    width: 19%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    li {
+      display: inline-block;
+      margin-right: 12px;
+    }
+  }
+
+  &__social-logo li:last-child {
+    margin-right: 0;
+  }
 }

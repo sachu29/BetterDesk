@@ -5,39 +5,38 @@
   color: $primary-color;
   overflow: hidden;
   &__heading {
+    font-weight: normal;
     margin-bottom: 33px;
   }
   &__paragraph {
     margin-bottom: 60px;
   }
-  &__main-content::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-  &__main-wrapper{
-    line-height: 100px;
-  }
-  &__sub-wrapper{
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 0;
+  &__main-content {
+    width: 100%;
+    font-size: 0;
   }
   &__left {
-    max-width: 502px;
+    width: 45%;
+    display: inline-block;
     text-align: left;
-    float: left;
+    vertical-align: middle;
   }
   &__right {
-    float: right;
+    display: inline-block;
+    width: 55%;
+    text-align: right;
+    vertical-align: middle;
   }
   &__content-wrapper {
-    padding: 18px 26px 32px 32px;
+    padding: 18px 20px 32px 32px;
     background: rgba(24, 144, 164, 0.5);
     border-radius: 3px;
   }
   &__list {
     padding: 14px 0 0 33px;
     color: #0b5e6e;
+  }
+  &__small-heading {
+    font-weight: normal;
   }
 }
