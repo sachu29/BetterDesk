@@ -213,6 +213,7 @@ li {
   overflow: hidden;
 }
 .hero .container {
+  position: relative;
   width: 100%;
   height: 100vh;
 }
@@ -233,7 +234,7 @@ li {
 .hero__image {
   position: absolute;
   bottom: -80px;
-  right: 0;
+  right: -150px;
 }
 .hero__form {
   position: relative;
